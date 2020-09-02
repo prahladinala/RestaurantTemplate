@@ -1,0 +1,620 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <title>PR Restaurant</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="./index.html">PR Restaurant</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="./index.html">Home</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="./menu.html">Menu</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Specials
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#splchicken">Special Chicken</a>
+                        <a class="dropdown-item" href="#splpizza">Special Pizza</a>
+                        <a class="dropdown-item" href="#breakfast">Healty & Tasty Breakfast</a>
+                        <a class="dropdown-item" href="#desserts">Delicious Desserts</a>
+                    </div>
+                </li>
+
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <!-- <button class="btn btn-success mr-sm-2" data-toggle="modal" data-target="#cart"><i
+                        class="fa fa-shopping-cart" aria-hidden="true"></i>
+                </button> -->
+                <button type="button" class="btn btn-success mr-sm-2" data-toggle="modal"
+                    data-target="#exampleModal">Login</button>
+            </form>
+        </div>
+    </nav>
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Login</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Email address</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1"
+                                aria-describedby="emailHelp">
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputPassword1">Password</label>
+                            <input type="password" class="form-control" id="exampleInputPassword1">
+                        </div>
+                        <p>Dont have an account yet?&nbsp;<a href="#" data-toggle="modal"
+                                data-target="#exampleModals">Register</a></p>
+                        <button type="submit" class="btn btn-success">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModals" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Register</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <label for="formGroupExampleInput">User Name</label>
+                            <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Iron Man">
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Email address</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1"
+                                aria-describedby="emailHelp" placeholder="ironman@avengers.com">
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputPassword1">Password</label>
+                            <input type="password" class="form-control" placeholder="Password"
+                                id="exampleInputPassword1">
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputPassword1">Retype Password</label>
+                            <input type="password" class="form-control" placeholder="Password"
+                                id="exampleInputPassword1">
+                        </div>
+                        <p>Dont have an account yet?&nbsp;<a href="#" data-toggle="modal"
+                                data-target="#exampleModal">Sign In</a></p>
+                        <button type="submit" class="btn btn-success">Create Account</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="container pt-5" id="splchicken">
+        <div class="row">
+            <h2 class="text-success">&emsp; Special Chicken</h2>
+            <hr style="width: 100%; color: #28A745; height: 1px; background-color:#28A745;" />
+        </div>
+        <div class="row">
+            <div class="card col-lg-3 col-sm-6 col-xs-12 bg-dark mx-auto text-white mb-3 mr-1 card3" id="comp2"
+                style="width: 18rem;">
+                <br />
+                <img src="https://images.unsplash.com/photo-1532550907401-a500c9a57435?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"
+                    class="card-img-top rndborder img3" alt="Placed a nice image here">
+                <div class="card-body">
+                    <h5 class="card-title">Chicken Roast</h5>
+                    <p class="card-text">This is a special recipe, which we get frequent orders.</p>
+                    <label for="exampleFormControlSelect1">Order Quantity</label>
+                    <select class="form-control" id="exampleFormControlSelect1">
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                    </select>
+                    <a href="#" class="btn btn-warning btn-block"><i class="fa fa-cart-plus" aria-hidden="true"></i>
+                        Add to Cart</a>
+                </div>
+            </div>
+
+            <div class="card col-lg-3 col-sm-6 col-xs-12 bg-dark mx-auto text-white mb-3 mr-1 card3" id="comp2"
+                style="width: 18rem;">
+                <br />
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Spatchcocking.jpg/375px-Spatchcocking.jpg"
+                    class="card-img-top rndborder img3" alt="Placed a nice image here">
+                <div class="card-body">
+                    <h5 class="card-title">Grilled Chicken</h5>
+                    <p class="card-text">This is a special recipe, which we get frequent orders.</p>
+                    <label for="exampleFormControlSelect1">Order Quantity</label>
+                    <select class="form-control" id="exampleFormControlSelect1">
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                    </select>
+                    <a href="#" class="btn btn-warning btn-block"><i class="fa fa-cart-plus" aria-hidden="true"></i>
+                        Add to Cart</a>
+                </div>
+            </div>
+
+            <div class="card col-lg-3 col-sm-6 col-xs-12 bg-dark mx-auto text-white mb-3 mr-1 card3" id="comp2"
+                style="width: 18rem;">
+                <br />
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Chicken_makhani.jpg/311px-Chicken_makhani.jpg"
+                    class="card-img-top rndborder img3" alt="Placed a nice image here">
+                <div class="card-body">
+                    <h5 class="card-title">Butter Chicken</h5>
+                    <p class="card-text">This is a special recipe, which we get frequent orders.</p>
+                    <label for="exampleFormControlSelect1">Order Quantity</label>
+                    <select class="form-control" id="exampleFormControlSelect1">
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                    </select>
+                    <a href="#" class="btn btn-warning btn-block"><i class="fa fa-cart-plus" aria-hidden="true"></i>
+                        Add to Cart</a>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="card col-lg-3 col-sm-6 col-xs-12 bg-dark mx-auto text-white mb-3 mr-1 card3" id="comp2"
+                style="width: 18rem;">
+                <br />
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b3/Chicken_Noodle_Soup.jpg/311px-Chicken_Noodle_Soup.jpg"
+                    class="card-img-top rndborder img3" alt="Placed a nice image here">
+                <div class="card-body">
+                    <h5 class="card-title">Chicken noodle soup</h5>
+                    <p class="card-text">This is a special recipe, which we get frequent orders.</p>
+                    <label for="exampleFormControlSelect1">Order Quantity</label>
+                    <select class="form-control" id="exampleFormControlSelect1">
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                    </select>
+                    <a href="#" class="btn btn-warning btn-block"><i class="fa fa-cart-plus" aria-hidden="true"></i>
+                        Add to Cart</a>
+                </div>
+            </div>
+
+
+            <div class="card col-lg-3 col-sm-6 col-xs-12 bg-dark mx-auto text-white mb-3 mr-1 card3" id="comp2"
+                style="width: 18rem;">
+                <br />
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/Shish_taouk.jpg/285px-Shish_taouk.jpg"
+                    class="card-img-top rndborder img3" alt="Placed a nice image here">
+                <div class="card-body">
+                    <h5 class="card-title">Chicken Kabab </h5>
+                    <p class="card-text">This is a special recipe, which we get frequent orders.</p>
+                    <label for="exampleFormControlSelect1">Order Quantity</label>
+                    <select class="form-control" id="exampleFormControlSelect1">
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                    </select>
+                    <a href="#" class="btn btn-warning btn-block"><i class="fa fa-cart-plus" aria-hidden="true"></i>
+                        Add to Cart</a>
+                </div>
+            </div>
+
+            <div class="card col-lg-3 col-sm-6 col-xs-12 bg-dark mx-auto text-white mb-3 mr-1 card3" id="comp2"
+                style="width: 18rem;">
+                <br />
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Kipsate_met_friet.jpg/285px-Kipsate_met_friet.jpg"
+                    class="card-img-top rndborder img3" alt="Placed a nice image here">
+                <div class="card-body">
+                    <h5 class="card-title">Chicken satay</h5>
+                    <p class="card-text">This is a special recipe, which we get frequent orders.</p>
+                    <label for="exampleFormControlSelect1">Order Quantity</label>
+                    <select class="form-control" id="exampleFormControlSelect1">
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                    </select>
+                    <a href="#" class="btn btn-warning btn-block"><i class="fa fa-cart-plus" aria-hidden="true"></i>
+                        Add to Cart</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container pt-5" id="splpizza">
+        <div class="row">
+            <h2 class="text-success">&emsp; Special Pizza's</h2>
+            <hr style="width: 100%; color: #28A745; height: 1px; background-color:#28A745;" />
+        </div>
+        <div class="row">
+            <div class="card col-lg-3 col-sm-6 col-xs-12 bg-dark mx-auto text-white mb-3 mr-1 card3" id="comp2"
+                style="width: 18rem;">
+                <br />
+                <img src="https://images.pexels.com/photos/1653877/pexels-photo-1653877.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+                    class="card-img-top rndborder img3" alt="Placed a nice image here">
+                <div class="card-body">
+                    <h5 class="card-title">Veg Pizza</h5>
+                    <p class="card-text">This is a special recipe, which we get frequent orders.</p>
+                    <label for="exampleFormControlSelect1">Order Quantity</label>
+                    <select class="form-control" id="exampleFormControlSelect1">
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                    </select>
+                    <a href="#" class="btn btn-warning btn-block"><i class="fa fa-cart-plus" aria-hidden="true"></i>
+                        Add to Cart</a>
+                </div>
+            </div>
+
+            <div class="card col-lg-3 col-sm-6 col-xs-12 bg-dark mx-auto text-white mb-3 mr-1 card3" id="comp2"
+                style="width: 18rem;">
+                <br />
+                <img src="https://images.pexels.com/photos/1069449/pexels-photo-1069449.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+                    class="card-img-top rndborder img3" alt="Placed a nice image here">
+                <div class="card-body">
+                    <h5 class="card-title">Veg Pizza <span class="badge badge-secondary">Extra Cheese</span> </h5>
+                    <p class="card-text">This is a special recipe, which we get frequent orders.</p>
+                    <label for="exampleFormControlSelect1">Order Quantity</label>
+                    <select class="form-control" id="exampleFormControlSelect1">
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                    </select>
+                    <a href="#" class="btn btn-warning btn-block"><i class="fa fa-cart-plus" aria-hidden="true"></i>
+                        Add to Cart</a>
+                </div>
+            </div>
+
+            <div class="card col-lg-3 col-sm-6 col-xs-12 bg-dark mx-auto text-white mb-3 mr-1 card3" id="comp2"
+                style="width: 18rem;">
+                <br />
+                <img src="https://images.pexels.com/photos/2918521/pexels-photo-2918521.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+                    class="card-img-top rndborder img3" alt="Placed a nice image here">
+                <div class="card-body">
+                    <h5 class="card-title">Veg Extravaganza</h5>
+                    <p class="card-text">This is a special recipe, which we get frequent orders.</p>
+                    <label for="exampleFormControlSelect1">Order Quantity</label>
+                    <select class="form-control" id="exampleFormControlSelect1">
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                    </select>
+                    <a href="#" class="btn btn-warning btn-block"><i class="fa fa-cart-plus" aria-hidden="true"></i>
+                        Add to Cart</a>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="row">
+            <div class="card col-lg-3 col-sm-6 col-xs-12 bg-dark mx-auto text-white mb-3 mr-1 card3" id="comp2"
+                style="width: 18rem;">
+                <br />
+                <img src="https://images.pexels.com/photos/367915/pexels-photo-367915.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+                    class="card-img-top rndborder img3" alt="Placed a nice image here">
+                <div class="card-body">
+                    <h5 class="card-title">Mexican Green Wave</h5>
+                    <p class="card-text">This is a special recipe, which we get frequent orders.</p>
+                    <label for="exampleFormControlSelect1">Order Quantity</label>
+                    <select class="form-control" id="exampleFormControlSelect1">
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                    </select>
+                    <a href="#" class="btn btn-warning btn-block"><i class="fa fa-cart-plus" aria-hidden="true"></i>
+                        Add to Cart</a>
+                </div>
+            </div>
+
+            <div class="card col-lg-3 col-sm-6 col-xs-12 bg-dark mx-auto text-white mb-3 mr-1 card3" id="comp2"
+                style="width: 18rem;">
+                <br />
+                <img src="https://images.pexels.com/photos/2741457/pexels-photo-2741457.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+                    class="card-img-top rndborder img3" alt="Placed a nice image here">
+                <div class="card-body">
+                    <h5 class="card-title">Deluxe Veggie </h5>
+                    <p class="card-text">This is a special recipe, which we get frequent orders.</p>
+                    <label for="exampleFormControlSelect1">Order Quantity</label>
+                    <select class="form-control" id="exampleFormControlSelect1">
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                    </select>
+                    <a href="#" class="btn btn-warning btn-block"><i class="fa fa-cart-plus" aria-hidden="true"></i>
+                        Add to Cart</a>
+                </div>
+            </div>
+
+            <div class="card col-lg-3 col-sm-6 col-xs-12 bg-dark mx-auto text-white mb-3 mr-1 card3" id="comp2"
+                style="width: 18rem;">
+                <br />
+                <img src="https://images.pexels.com/photos/1049626/pexels-photo-1049626.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+                    class="card-img-top rndborder img3" alt="Placed a nice image here">
+                <div class="card-body">
+                    <h5 class="card-title">Peppy Paneer Pizza</h5>
+                    <p class="card-text">This is a special recipe, which we get frequent orders.</p>
+                    <label for="exampleFormControlSelect1">Order Quantity</label>
+                    <select class="form-control" id="exampleFormControlSelect1">
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                    </select>
+                    <a href="#" class="btn btn-warning btn-block"><i class="fa fa-cart-plus" aria-hidden="true"></i>
+                        Add to Cart</a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="container pt-5" id="breakfast">
+        <div class="row">
+            <h2 class="text-success">&emsp; Healty & Tasty Breakfast</h2>
+            <hr style="width: 100%; color: #28A745; height: 1px; background-color:#28A745;" />
+        </div>
+        <div class="row">
+            <div class="card col-lg-3 col-sm-6 col-xs-12 bg-dark mx-auto text-white mb-3 mr-1 card3" id="comp2"
+                style="width: 18rem;">
+                <br />
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Dosa_at_Sri_Ganesha_Restauran%2C_Bangkok_%2844570742744%29.jpg/330px-Dosa_at_Sri_Ganesha_Restauran%2C_Bangkok_%2844570742744%29.jpg"
+                    class="card-img-top rndborder img3" alt="Placed a nice image here">
+                <div class="card-body">
+                    <h5 class="card-title">Cheese Dosa</h5>
+                    <p class="card-text">This is a special recipe, which we get frequent orders.</p>
+                    <label for="exampleFormControlSelect1">Order Quantity</label>
+                    <select class="form-control" id="exampleFormControlSelect1">
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                    </select>
+                    <a href="#" class="btn btn-warning btn-block"><i class="fa fa-cart-plus" aria-hidden="true"></i>
+                        Add to Cart</a>
+                </div>
+            </div>
+
+            <div class="card col-lg-3 col-sm-6 col-xs-12 bg-dark mx-auto text-white mb-3 mr-1 card3" id="comp2"
+                style="width: 18rem;">
+                <br />
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/Tomato_Dosa_chutney.jpg/330px-Tomato_Dosa_chutney.jpg"
+                    class="card-img-top rndborder img3" alt="Placed a nice image here">
+                <div class="card-body">
+                    <h5 class="card-title">Panner Dosa</h5>
+                    <p class="card-text">This is a special recipe, which we get frequent orders.</p>
+                    <label for="exampleFormControlSelect1">Order Quantity</label>
+                    <select class="form-control" id="exampleFormControlSelect1">
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                    </select>
+                    <a href="#" class="btn btn-warning btn-block"><i class="fa fa-cart-plus" aria-hidden="true"></i>
+                        Add to Cart</a>
+                </div>
+            </div>
+
+            <div class="card col-lg-3 col-sm-6 col-xs-12 bg-dark mx-auto text-white mb-3 mr-1 card3" id="comp2"
+                style="width: 18rem;">
+                <br />
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/86/Idli_-_A_Traditional_Indian_Food.JPG/330px-Idli_-_A_Traditional_Indian_Food.JPG"
+                    class="card-img-top rndborder img3" alt="Placed a nice image here">
+                <div class="card-body">
+                    <h5 class="card-title">Tasty Idly</h5>
+                    <p class="card-text">This is a special recipe, which we get frequent orders.</p>
+                    <label for="exampleFormControlSelect1">Order Quantity</label>
+                    <select class="form-control" id="exampleFormControlSelect1">
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                    </select>
+                    <a href="#" class="btn btn-warning btn-block"><i class="fa fa-cart-plus" aria-hidden="true"></i>
+                        Add to Cart</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="container pt-5" id="desserts">
+        <div class="row">
+            <h2 class="text-success">&emsp; Delicious Desserts</h2>
+            <hr style="width: 100%; color: #28A745; height: 1px; background-color:#28A745;" />
+        </div>
+        <div class="row">
+            <div class="card col-lg-3 col-sm-6 col-xs-12 bg-dark mx-auto text-white mb-3 mr-1 card3" id="comp2"
+                style="width: 18rem;">
+                <br />
+                <img src="https://images.pexels.com/photos/1126359/pexels-photo-1126359.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+                    class="card-img-top rndborder img3" alt="Placed a nice image here">
+                <div class="card-body">
+                    <h5 class="card-title">Red Velvet</h5>
+                    <p class="card-text">This is a special recipe, which we get frequent orders.</p>
+                    <label for="exampleFormControlSelect1">Order Quantity</label>
+                    <select class="form-control" id="exampleFormControlSelect1">
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                    </select>
+                    <a href="#" class="btn btn-warning btn-block"><i class="fa fa-cart-plus" aria-hidden="true"></i>
+                        Add to Cart</a>
+                </div>
+            </div>
+
+            <div class="card col-lg-3 col-sm-6 col-xs-12 bg-dark mx-auto text-white mb-3 mr-1 card3" id="comp2"
+                style="width: 18rem;">
+                <br />
+                <img src="https://images.pexels.com/photos/45202/brownie-dessert-cake-sweet-45202.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+                    class="card-img-top rndborder img3" alt="Placed a nice image here">
+                <div class="card-body">
+                    <h5 class="card-title">More Chocolate</h5>
+                    <p class="card-text">This is a special recipe, which we get frequent orders.</p>
+                    <label for="exampleFormControlSelect1">Order Quantity</label>
+                    <select class="form-control" id="exampleFormControlSelect1">
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                    </select>
+                    <a href="#" class="btn btn-warning btn-block"><i class="fa fa-cart-plus" aria-hidden="true"></i>
+                        Add to Cart</a>
+                </div>
+            </div>
+
+            <div class="card col-lg-3 col-sm-6 col-xs-12 bg-dark mx-auto text-white mb-3 mr-1 card3" id="comp2"
+                style="width: 18rem;">
+                <br />
+                <img src="https://images.pexels.com/photos/2144112/pexels-photo-2144112.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+                    class="card-img-top rndborder img3" alt="Placed a nice image here">
+                <div class="card-body">
+                    <h5 class="card-title">Classic Choco Dessert</h5>
+                    <p class="card-text">This is a special recipe, which we get frequent orders.</p>
+                    <label for="exampleFormControlSelect1">Order Quantity</label>
+                    <select class="form-control" id="exampleFormControlSelect1">
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                    </select>
+                    <a href="#" class="btn btn-warning btn-block"><i class="fa fa-cart-plus" aria-hidden="true"></i>
+                        Add to Cart</a>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="row">
+            <div class="card col-lg-3 col-sm-6 col-xs-12 bg-dark mx-auto text-white mb-3 mr-1 card3" id="comp2"
+                style="width: 18rem;">
+                <br />
+                <img src="https://images.pexels.com/photos/132694/pexels-photo-132694.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+                    class="card-img-top rndborder img3" alt="Placed a nice image here">
+                <div class="card-body">
+                    <h5 class="card-title">Choco Creamy Dessert</h5>
+                    <p class="card-text">This is a special recipe, which we get frequent orders.</p>
+                    <label for="exampleFormControlSelect1">Order Quantity</label>
+                    <select class="form-control" id="exampleFormControlSelect1">
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                    </select>
+                    <a href="#" class="btn btn-warning btn-block"><i class="fa fa-cart-plus" aria-hidden="true"></i>
+                        Add to Cart</a>
+                </div>
+            </div>
+
+            <div class="card col-lg-3 col-sm-6 col-xs-12 bg-dark mx-auto text-white mb-3 mr-1 card3" id="comp2"
+                style="width: 18rem;">
+                <br />
+                <img src="https://images.pexels.com/photos/827513/pexels-photo-827513.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+                    class="card-img-top rndborder img3" alt="Placed a nice image here">
+                <div class="card-body">
+                    <h5 class="card-title">Fruits Dessert</h5>
+                    <p class="card-text">This is a special recipe, which we get frequent orders.</p>
+                    <label for="exampleFormControlSelect1">Order Quantity</label>
+                    <select class="form-control" id="exampleFormControlSelect1">
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                    </select>
+                    <a href="#" class="btn btn-warning btn-block"><i class="fa fa-cart-plus" aria-hidden="true"></i>
+                        Add to Cart</a>
+                </div>
+            </div>
+
+            <div class="card col-lg-3 col-sm-6 col-xs-12 bg-dark mx-auto text-white mb-3 mr-1 card3" id="comp2"
+                style="width: 18rem;">
+                <br />
+                <img src="https://images.pexels.com/photos/1414234/pexels-photo-1414234.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+                    class="card-img-top rndborder img3" alt="Placed a nice image here">
+                <div class="card-body">
+                    <h5 class="card-title">Strawberry Dessert</h5>
+                    <p class="card-text">This is a special recipe, which we get frequent orders.</p>
+                    <label for="exampleFormControlSelect1">Order Quantity</label>
+                    <select class="form-control" id="exampleFormControlSelect1">
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                    </select>
+                    <a href="#" class="btn btn-warning btn-block"><i class="fa fa-cart-plus" aria-hidden="true"></i>
+                        Add to Cart</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
